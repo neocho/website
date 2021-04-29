@@ -1,40 +1,40 @@
+import { Link } from 'react-router-dom'; 
+import { useEffect, useState } from 'react'; 
+
 function Home(){
+	const [emoji, setEmoji] = useState(['🌍', '⚡️', '🚀', '🥳', '👽', '💥']);
+	const [currIdx, setCurrIdx] = useState(0); 
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			var newIdx = currIdx  === 5 ? 0 : currIdx+1; 
+			setCurrIdx(newIdx); 	
+		}, 1000);
+
+		return () => clearInterval(interval); 
+	}); 
+
     return (
-        <div className="text-left sm:text-left m-12">
-			<div className="mb-4"> 
-				<h1 className="text-2xl font-serif">Neo Cho</h1>
+        <div className="ml-10 mt-10 text-left">
+			<div className="font-sans text-base font-bold items-center w-30"> 
+				<nav> 
+					<a href="/" className="hover:underline">@neocho</a>		
+				</nav>
 			</div>
-			
-			<div className="mb-2">
-				<p className="text-md font-serif">Spending 2021 learning + building + reflecting. </p>	
+			<div className="hover:underline font-sans text-base font-bold items-center mt-5 w-30"> 	
+				<Link to='/about'>About</Link>	
+			</div>	
+			<div className="hover:underline font-sans text-base font-bold items-center w-30"> 	
+				<Link to='/posts'>Posts</Link>	
 			</div>
-
-            <div className="mb-2">
-                <p className="text-md font-serif">Finishing my last year at <a href="https://www.cecs.ucf.edu/" className="font-medium font-serif"> UCF</a>. </p>
-            </div>
-      
-            <div className="mb-3">
-                <p className="text-md font-serif">Thinking about social e-commerce, agritech & crypto.</p>
-            </div>
-
-            <div className="flex"> 
-                <div className="mr-4">	
-                    <a href="https://twitter.com/neocho_" className="text-md font-semibold underline font-serif">Twitter</a>
-                </div>  
-
-                <div className="mr-4">
-                    <a href="https://www.linkedin.com/in/neocho/" className="text-md font-semibold underline font-serif">LinkedIn</a>
-                </div> 
-
-                <div className="mr-4">
-                    <a href="https://github.com/neocho" className="text-md font-semibold underline font-serif">Github</a>
-                </div> 
-
-                <div className="mr-4">
-                    <a href="mailto:choneo.ch@gmail.com" className="text-md font-semibold underline font-serif">Email</a>
-                </div> 
-            </div>
-
+			<div className="hover:underline font-sans text-base font-bold items-center w-30"> 
+				<Link to='/contact'>Contact</Link>	
+			</div>
+			<div className="text-base font-sans mt-10">
+				<footer>	
+					<h1> {emoji[currIdx]} neocho.eth </h1> 
+				</footer>
+			</div>	
         </div>
     );
 }
