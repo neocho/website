@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 function Home(){
 	const [emoji, setEmoji] = useState(['🌍', '⚡️', '🚀', '🥳', '👽', '💥']);
 	const [currIdx, setCurrIdx] = useState(0); 
-
+	
 	useEffect(() => {
 		const interval = setInterval(() => {
 			var newIdx = currIdx  === 5 ? 0 : currIdx+1; 
@@ -12,7 +12,7 @@ function Home(){
 		}, 1000);
 
 		return () => clearInterval(interval); 
-	}); 
+	},[currIdx]); 
 
     return (
         <div className="ml-10 mt-10 text-left">
