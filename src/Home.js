@@ -15,19 +15,19 @@ function Home(){
 	},[currIdx]); 
 
     return (
-        <div className="ml-10 mt-10 text-left">
-			<div className="font-sans text-base font-bold items-center w-30"> 
+        <div className="min-h-screen p-7">
+			<div className="font-sans text-base font-bold w-30"> 
 				<nav> 
 					<a href="/" className="hover:underline">@neocho</a>		
 				</nav>
 			</div>
-			<div className="hover:underline font-sans text-base font-bold items-center mt-5 w-30"> 	
+			<div className="hover:underline font-sans text-base font-bold mt-5 w-30"> 	
 				<Link to='/about'>About</Link>	
 			</div>	
-			<div className="hover:underline font-sans text-base font-bold items-center w-30"> 	
+			<div className="hover:underline font-sans text-base font-bold w-30"> 	
 				<Link to='/posts'>Posts</Link>	
 			</div>
-			<div className="hover:underline font-sans text-base font-bold items-center w-30"> 
+			<div className="hover:underline font-sans text-base font-bold w-30"> 
 				<Link to='/contact'>Contact</Link>	
 			</div>
 			<div className="text-base font-sans mt-10">

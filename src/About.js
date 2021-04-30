@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 function About() {
 	return (
-		<div className="ml-10 mt-10 text-left"> 
-			<div className="font-sans font-bold text-base items-center w-30"> 
+		<div className="min-h-screen p-7"> 
+			<div className="font-sans font-bold text-base w-30"> 
 				<Link to='/'>&lt; Back</Link> 
 			</div> 
-			<div className="font-sans text-base items-center mt-5 w-96 break-words space-y-5"> 	
+			<div className="font-sans text-base mt-5 break-words space-y-5"> 	
 				<p>Hi! I am finishing my last year in college studying computer science. I love 
 				   learning about new things and building! If you want to collaborate on a 
 				   project, please send me a <a href="https://twitter.com/neocho_" className="hover:underline font-semibold">DM</a>!</p> 
