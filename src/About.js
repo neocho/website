@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function About() {
 	return (
-		<div className="min-h-screen p-7"> 
+		<div className="min-h-screen p-7 max-w-md"> 
 			<div className="font-sans font-bold text-base w-30"> 
 				<Link to='/'>&lt; Back</Link> 
 			</div> 
