@@ -25,7 +25,7 @@ function Home(){
 				<Link to='/about'>About</Link>	
 			</div>	
 			<div className="hover:underline font-sans text-base font-bold w-30"> 	
-				<a href="">Posts</a>	
+				<a href="https://neocho.substack.com/">Blog</a>	
 			</div>
 			<div className="hover:underline font-sans text-base font-bold w-30"> 
 				<Link to='/contact'>Contact</Link>	
