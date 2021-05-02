@@ -22,9 +22,7 @@
   },
   "scripts": {
     "start": "next start",
-    "predeploy": "npm run build",
     "build": "next build",
-    "eject": "react-scripts eject",
     "dev": "next"
   },
   "eslintConfig": {
