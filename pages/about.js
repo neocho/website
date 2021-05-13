@@ -8,7 +8,7 @@ export default function About() {
 			<Head>
 				<title>About</title>
 			</Head>
-			<div className="font-sans font-bold text-base w-30"> 
+			<div className="font-sans font-bold text-base text-lg w-30"> 
 				<Link href='/'>
 					<a>&lt; Back</a>
 				</Link> 

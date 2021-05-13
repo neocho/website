@@ -9,7 +9,7 @@ export default function Posts(props) {
 			<Head>
 				<title>Posts</title>
 			</Head>
-			<div className="font-sans text-base font-bold w-30">
+			<div className="font-sans text-base text-lg font-bold w-30">
 				<Link href='/'>
 					<a>&lt; Back</a>
 				</Link> 
@@ -19,7 +19,7 @@ export default function Posts(props) {
 					props.posts.map((post,idx) => {
 						return(
 							<a href={'/posts/' + post.slug} key={idx}>
-								<h1 className="hover:underline font-sans text-base font-semibold mb-2">{post.date}: {post.title}</h1>
+								<h1 className="hover:underline font-sans text-base text-lg font-semibold mb-2">{post.date}: {post.title}</h1>
 							</a>	
 						);
 					})

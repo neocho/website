@@ -22,27 +22,27 @@ export default function Home() {
 			<Head>
 				<title>Neo's Website</title>
 			</Head>
-			<div className="font-sans text-base font-bold w-30">
+			<div className="font-sans text-base text-lg font-bold w-30">
 				<nav>
 					<a href="/" className="hover:underline">@neocho</a>
 				</nav>
 			</div> 
-			<div className="hover:underline font-sans text-base font-bold mt-5 w-30">
+			<div className="hover:underline font-sans text-base text-lg font-bold mt-5 w-30">
 				 <Link href='/about'>
 					<a>About</a>
 				 </Link>
 			</div> 
-			<div className="hover:underline font-sans text-base font-bold w-30">	
+			<div className="hover:underline font-sans text-base text-lg font-bold w-30">	
 				 <Link href='/posts'>
 					<a>Posts</a>
 				 </Link>
 			</div> 
-			<div className="hover:underline font-sans text-base font-bold w-30">	
+			<div className="hover:underline font-sans text-base text-lg font-bold w-30">	
 				<Link href='/contact'>
 					<a>Contact</a>
 				</Link>
 			</div> 
-			<div className="text-base font-sans mt-10">		
+			<div className="text-base font-sans text-lg mt-10">		
 			<footer>
 				<h1> {emoji[currIdx]} neocho.eth </h1>
 			</footer>	

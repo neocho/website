@@ -5,18 +5,18 @@ import 'tailwindcss/tailwind.css';
 
 export default function Post(props) {
     return (
-        <div className="min-h-screen p-7"> 
+        <div className="min-h-screen p-7 max-w-md"> 
             <Head>
                 <title>{props.title}</title>
             </Head>
-			<div className="font-sans text-base font-bold w-30">
+			<div className="font-sans text-base text-lg font-bold w-30">
 				<Link href='/posts'>
 					<a>&lt; Back</a>
 				</Link> 
 			</div>
-			<div className="mt-5 w-30">
-                <h1 className="font-sans text-base font-bold text-xl">{props.title}</h1>
-                <div dangerouslySetInnerHTML={{__html: props.content}} className="font-sans text-base mt-5"></div> 
+			<div className="font-sans text-base mt-5 break-words">
+                <h1 className="font-sans text-base font-bold text-2xl mb-4">{props.title}</h1>
+                <div dangerouslySetInnerHTML={{__html: props.content}} className="space-y-4"></div> 
 			</div>
 		</div>
     )
