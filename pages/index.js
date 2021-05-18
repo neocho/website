@@ -1,52 +1,28 @@
-import { useEffect, useState } from 'react'; 
 import { getConfig, getPosts } from '@api'; 
-import Head from 'next/head';
 import Link from 'next/link'; 
-import 'tailwindcss/tailwind.css';
+import Header from '_layouts/Header';
+import Footer from '_layouts/Footer'; 
 
 export default function Home() { 
-	const [emoji, setEmoji] = useState(['🌍', '⚡️', '🚀', '🥳', '👽', '💥']);
-	const [currIdx, setCurrIdx] = useState(0);
-  
-	useEffect(() => {
-		const interval = setInterval(() => {
-			var newIdx = currIdx  === 5 ? 0 : currIdx+1;
-			setCurrIdx(newIdx);
-		}, 1000);
-		
-		return () => clearInterval(interval);
-	},[currIdx]);
-
 	return (
-		<div className="min-h-screen p-7">
-			<Head>
-				<title>Neo's Website</title>
-			</Head>
-			<div className="font-sans text-base text-lg font-bold w-30">
-				<nav>
-					<a href="/" className="hover:underline">@neocho</a>
-				</nav>
-			</div> 
-			<div className="hover:underline font-sans text-base text-lg font-bold mt-5 w-30">
-				 <Link href='/about'>
-					<a>About</a>
-				 </Link>
-			</div> 
-			<div className="hover:underline font-sans text-base text-lg font-bold w-30">	
+		<div className="min-h-screen p-7 max-w-md">
+			<Header title={"Neo's Website"}/>
+			<div className="font-body text-base mt-5 break-words space-y-3"> 	
+				<p>Taking a break from college to learn new things.</p>
+				<p>Want to collaborate on a project, shoot me a <a href="https://twitter.com/neocho_" className="hover:underline font-semibold">DM</a>!</p> 
+				<p>In my free time I like to read, meditate, workout, and listen to music.</p> 		
+            </div>
+			<div className="hover:underline font-body text-base text-lg font-bold mt-5 w-30">	
 				 <Link href='/posts'>
 					<a>Posts</a>
 				 </Link>
 			</div> 
-			<div className="hover:underline font-sans text-base text-lg font-bold w-30">	
-				<Link href='/contact'>
-					<a>Contact</a>
-				</Link>
+			<div className="hover:underline font-body text-base text-lg font-bold w-30">
+				 <Link href='/books'>
+					<a>Books</a>
+				 </Link>
 			</div> 
-			<div className="text-base font-sans text-lg mt-10">		
-			<footer>
-				<h1> {emoji[currIdx]} neocho.eth </h1>
-			</footer>	
-			</div>
+			<Footer />
 	     </div>
 	); 
 }

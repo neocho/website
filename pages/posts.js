@@ -1,30 +1,25 @@
 import Link from 'next/link';
 import { getPosts } from '@api'; 
 import Head from 'next/head';
-import 'tailwindcss/tailwind.css';
+import Header from '_layouts/Header';
+import Footer from '_layouts/Footer'; 
 
 export default function Posts(props) {
 	return (
 		<div className="min-h-screen p-7"> 
-			<Head>
-				<title>Posts</title>
-			</Head>
-			<div className="font-sans text-base text-lg font-bold w-30">
-				<Link href='/'>
-					<a>&lt; Back</a>
-				</Link> 
-			</div>
+			<Header title={"Posts"}/>
 			<div className="mt-5 w-30">
 				{
 					props.posts.map((post,idx) => {
 						return(
 							<a href={'/posts/' + post.slug} key={idx}>
-								<h1 className="hover:underline font-sans text-base text-lg font-semibold mb-2">{post.date}: {post.title}</h1>
+								<h1 className="hover:text-gray-700 font-body text-base font-semibold mb-2">{post.date}: {post.title}</h1>
 							</a>	
 						);
 					})
 				}
 			</div>
+			<Footer />
 		</div>
 	);
 }

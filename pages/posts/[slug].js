@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import { getPosts, getPostSlug } from '@api';
-import 'tailwindcss/tailwind.css';
+import Footer from '_layouts/footer';
 
 export default function Post(props) {
     return (
@@ -9,15 +9,16 @@ export default function Post(props) {
             <Head>
                 <title>{props.title}</title>
             </Head>
-			<div className="font-sans text-base text-lg font-bold w-30">
+			<div className="font-body text-base text-lg font-bold w-30">
 				<Link href='/posts'>
-					<a>&lt; Back</a>
+					<a className="hover:underline">Back</a>
 				</Link> 
 			</div>
-			<div className="font-sans text-base mt-5 break-words">
-                <h1 className="font-sans text-base font-bold text-2xl mb-4">{props.title}</h1>
+			<div className="font-body text-md mt-5 break-words">
+                <h1 className="font-bold text-lg mb-4">{props.title}</h1>
                 <div dangerouslySetInnerHTML={{__html: props.content}} className="space-y-4"></div> 
 			</div>
+            <Footer />
 		</div>
     )
 }
