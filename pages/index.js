@@ -1,7 +1,7 @@
 import { getConfig, getPosts } from '@api'; 
 import Link from 'next/link'; 
-import Header from '_includes/Header';
-import Footer from '_includes/Footer'; 
+import Header from '@includes/Header';
+import Footer from '@includes/Footer'; 
 
 export default function Home() { 
 	return (

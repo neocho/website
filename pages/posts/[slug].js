@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import { getPosts, getPostSlug } from '@api';
-import Footer from '_includes/Footer';
+import Footer from '@includes/Footer';
 
 export default function Post(props) {
     return (
