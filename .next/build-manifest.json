@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/2cstpq9Tfhv6S1LwOiAwF/_buildManifest.js",
-    "static/2cstpq9Tfhv6S1LwOiAwF/_ssgManifest.js"
+    "static/jX7A4Gn5UAS79vZKlGonx/_buildManifest.js",
+    "static/jX7A4Gn5UAS79vZKlGonx/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -14,10 +14,10 @@
       "static/chunks/framework.1cddd991bfe63666dc71.js",
       "static/chunks/commons.e430a9575bb75d2f55d8.js",
       "static/chunks/main-c91d9b61c1c99e030803.js",
-      "static/chunks/77b3f3b5.e90cb24069d5d1ef7fa6.js",
+      "static/chunks/d64684d8.ef30b304af3d0f543c9a.js",
       "static/chunks/9f96d65d.3f3e4ee454904b796427.js",
       "static/chunks/39c3247a28bc7aef97da626785961171c7b666ed.87faa5a84e6748035ad1.js",
-      "static/chunks/ef48d33d73a76d92a14feb0c41e47c693c44f586.c3e661d85fa563322c4e.js",
+      "static/chunks/ef48d33d73a76d92a14feb0c41e47c693c44f586.1e2b7082e2de56bfc7bf.js",
       "static/chunks/pages/index-844a36de3396ad1999b6.js"
     ],
     "/_app": [
@@ -40,9 +40,9 @@
       "static/chunks/framework.1cddd991bfe63666dc71.js",
       "static/chunks/commons.e430a9575bb75d2f55d8.js",
       "static/chunks/main-c91d9b61c1c99e030803.js",
-      "static/chunks/77b3f3b5.e90cb24069d5d1ef7fa6.js",
+      "static/chunks/d64684d8.ef30b304af3d0f543c9a.js",
       "static/chunks/39c3247a28bc7aef97da626785961171c7b666ed.87faa5a84e6748035ad1.js",
-      "static/chunks/ef48d33d73a76d92a14feb0c41e47c693c44f586.c3e661d85fa563322c4e.js",
+      "static/chunks/ef48d33d73a76d92a14feb0c41e47c693c44f586.1e2b7082e2de56bfc7bf.js",
       "static/chunks/pages/books-ed8ceb0b5c4d9f625439.js"
     ],
     "/posts": [
@@ -50,9 +50,9 @@
       "static/chunks/framework.1cddd991bfe63666dc71.js",
       "static/chunks/commons.e430a9575bb75d2f55d8.js",
       "static/chunks/main-c91d9b61c1c99e030803.js",
-      "static/chunks/77b3f3b5.e90cb24069d5d1ef7fa6.js",
+      "static/chunks/d64684d8.ef30b304af3d0f543c9a.js",
       "static/chunks/39c3247a28bc7aef97da626785961171c7b666ed.87faa5a84e6748035ad1.js",
-      "static/chunks/ef48d33d73a76d92a14feb0c41e47c693c44f586.c3e661d85fa563322c4e.js",
+      "static/chunks/ef48d33d73a76d92a14feb0c41e47c693c44f586.1e2b7082e2de56bfc7bf.js",
       "static/chunks/pages/posts-fc3de65f83e2969a22de.js"
     ],
     "/posts/[slug]": [

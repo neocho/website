@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { IconContext } from 'react-icons'; 
 import { FiTwitter, FiGithub } from 'react-icons/fi';
-import { HiOutlineMail } from 'react-icons/Hi'; 
+import { HiOutlineMail } from 'react-icons/hi'; 
 
 function Header(props){
 	return(
