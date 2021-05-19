@@ -1,7 +1,7 @@
 import Link from 'next/link';  
 import Head from 'next/head';
-import Header from '_layouts/Header';
-import Footer from '_layouts/Footer'; 
+import Header from '_includes/Header';
+import Footer from '_includes/Footer'; 
 
 export default function About() {
 	return (
