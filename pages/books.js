@@ -1,17 +1,23 @@
-import Link from 'next/link';  
-import Head from 'next/head';
 import Header from '@includes/Header';
 import Footer from '@includes/Footer'; 
 
-export default function About() {
+export default function Books() {
 	return (
-		<div className="min-h-screen p-7 max-w-md"> 
-			<Header title={"Books"} />
-			<div className="font-body text-base mt-5 break-words space-y-5"> 	
-				<p> Coming soon. </p>
-            </div>
-			<Footer />
-		</div> 
+		<div className="place-items-center min-h-screen">
+			<div className="ml-2">
+
+				<Header title={"Books"}/>
+			
+				<div className="font-body text-sm space-y-2 pl-5 pr-5"> 	
+					<p>Coming soon!</p>	
+				</div>
+
+				<Footer />
+
+			</div>
+		</div>
 	);
 }
+
+
 

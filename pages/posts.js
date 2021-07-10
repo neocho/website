@@ -1,28 +1,37 @@
-import Link from 'next/link';
 import { getPosts } from '@api'; 
-import Head from 'next/head';
 import Header from '@includes/Header';
 import Footer from '@includes/Footer'; 
 
 export default function Posts(props) {
 	return (
-		<div className="min-h-screen p-7"> 
-			<Header title={"Posts"}/>
-			<div className="mt-5 w-30">
-				{
-					props.posts.map((post,idx) => {
-						return(
-							<a href={'/posts/' + post.slug} key={idx}>
-								<h1 className="hover:text-gray-700 font-body text-base font-semibold mb-2">{post.date}: {post.title}</h1>
-							</a>	
-						);
-					})
-				}
+		<div className="place-items-center min-h-screen">
+			<div className="ml-2">
+				<Header title={"Home"}/>
+
+				<div className="pl-5 pr-5 mb-10">
+					{
+						props.posts.map((post,idx) => {
+							return(
+								<a href={'/posts/' + post.slug} key={idx}>
+									<p className="font-body text-xs">{post.date}</p>
+									<h1 className="hover:text-gray-500 font-body text-base font-bold mb-4">{post.title}</h1>
+								</a>	
+							);
+						})
+					}
+				</div>
+
+				<Footer />
+
 			</div>
-			<Footer />
 		</div>
 	);
 }
+
+
+
+
+
 
 export async function getStaticProps() {
 	const allPosts = await getPosts();
